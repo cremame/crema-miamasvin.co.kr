@@ -8,6 +8,12 @@
     <div id="review-photo-summary">
       <div class="count-text"><span class="count"><%= product.photo_reviews_count %></span>개의 포토리뷰가 있습니다.</div>
     </div>
+    <div class="show-all-photo-reviews">
+      <%= content_tag :a, class: "link-photo-reviews #{'selected' if @review_filter == ReviewFilterType::PHOTO}", data: {filter: ReviewFilterType::PHOTO} do %>
+        포토리뷰 모아보기
+        <span class="sprites-check"></span>
+      <% end %>
+    </div>    
     <ul class="product-thumbnail-container">
       <% brand = @brand %>
       <% review_images.each_with_index do |image, index| %>
@@ -31,11 +37,5 @@
         <li class="photo-review-thumbnail photo-review-thumbnail-empty"></li>
       <% end %>
     </ul>
-    <div class="show-all-photo-reviews">
-      <%= content_tag :a, class: "link-photo-reviews #{'selected' if @review_filter == ReviewFilterType::PHOTO}", data: {filter: ReviewFilterType::PHOTO} do %>
-        포토리뷰 모아보기
-        <span class="sprites-check"></span>
-      <% end %>
-    </div>
   </div>
 </div>
