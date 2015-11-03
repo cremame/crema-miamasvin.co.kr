@@ -7,14 +7,6 @@ body.products.reviews {
   margin: 2px;
 }
 
-body.widget .widget-heading .sort_type_box {
-  width: 300px;
-}
-
-body.products .review-options-search {
-  left: 820px;
-}
-
 body.products.reviews, #review-edit-form {
   .widget {
     &.new-review {
@@ -27,10 +19,15 @@ body.products.reviews, #review-edit-form {
         height: 21px;
         border-bottom: 0;
         margin-bottom: 40px;
+        
+        .sort_type_box {
+          width: 300px;
+        }
 
         .review-options-search {
           margin-top: 8px;
           top: 25px;
+          left: 820px;
         }
       }
     }
