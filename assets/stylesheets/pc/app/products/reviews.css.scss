@@ -7,6 +7,14 @@ body.products.reviews {
   margin: 2px;
 }
 
+body.widget .widget-heading .sort_type_box {
+  width: 300px;
+}
+
+body.products .review-options-search {
+  left: 820px;
+}
+
 body.products.reviews, #review-edit-form {
   .widget {
     &.new-review {
@@ -31,7 +39,7 @@ body.products.reviews, #review-edit-form {
   ul.header {
     line-height: 39px;
     border-top: 2px solid #ADADAD;
-    border-bottom: 2px solid #ADADAD;
+    border-bottom: 1px solid #e4e4e4;
     font-weight: bold;
     color: #4c4c4c;
 
@@ -93,12 +101,6 @@ body.products.reviews, #review-edit-form {
         position: absolute;
         top: 0;
         right: 110px;
-        margin-top: -5px;
-        
-        div {
-          font-size: 11px;
-          margin-top: -28px;          
-        }
       }
 
       &.score {
