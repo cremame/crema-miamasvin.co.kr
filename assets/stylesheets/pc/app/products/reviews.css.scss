@@ -21,13 +21,19 @@ body.products.reviews, #review-edit-form {
         margin-bottom: 40px;
         
         .sort_type_box {
-          width: 300px;
+          width: 232px;
+          float: right;
+          margin-top: 35px;
         }
 
         .review-options-search {
           margin-top: 8px;
           top: 25px;
-          left: 820px;
+          left: 0px;
+          
+            .link-review-option-type {
+              color: #000;  
+            }
         }
       }
     }
