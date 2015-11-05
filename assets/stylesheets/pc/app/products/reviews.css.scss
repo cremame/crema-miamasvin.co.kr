@@ -10,6 +10,8 @@ body.products.reviews {
 body.products.reviews, #review-edit-form {
   .widget {
     &.new-review {
+      background: #000;
+      color: #fff;
     }
 
     &.widget-reviews {
