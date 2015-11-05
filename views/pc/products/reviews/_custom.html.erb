@@ -1,4 +1,3 @@
-<% title t('reviews.product_reviews') %>
 <% content_for :content do %>
   <% if @product && (@brand.review_writable? || !@reviews.empty?) %>
     <% display_write_form = @brand.review_writable? && display_write_form?(@product) %>
