@@ -10,8 +10,6 @@ body.products.reviews {
 body.products.reviews, #review-edit-form {
   .widget {
     &.new-review {
-      background: #000;
-      color: #fff;
     }
 
     &.widget-reviews {
@@ -21,6 +19,11 @@ body.products.reviews, #review-edit-form {
         height: 21px;
         border-bottom: 0;
         margin-bottom: 40px;
+        
+        .show-reviews-index {
+          background: #000;
+          color: #fff;
+        }
         
         .sort_type_box {
           width: 232px;
