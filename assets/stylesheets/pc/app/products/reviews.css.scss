@@ -464,37 +464,53 @@ body.products.reviews, #review-edit-form {
 
   #review-photo-thumbnails {
     position: relative;
+    margin-left: 185px;
     text-align: center;
-
-    .title {
-      font-size: 27px;
-      font-family: $font-default;
-    }
+    height: 65px;
 
     #review-photo-summary {
-      padding-top: 12px;
-      padding-bottom: 30px;
+      position: absolute;
+      left: -190px;
+      top: -1px;
 
       .count-text {
-        color: #616161;
-        font-size: 13px;
+        color: #c3c3c3;
+        font-size: 12px;
 
         .count {
+          font-size: 20px;
+          font-weight: bold;
+          color: black;
           font-family: $font-default;
           padding-right: 3px;
+        }
+      }
+
+      .show-all-photo-reviews {
+        color: #666;
+        font-size: 12px;
+        text-align: right;
+        margin-top: 4px;
+
+        .sprites-check {
+          display: none;
+        }
+
+        .selected .sprites-check {
+          @include inline-block;
+          position: relative;
+          top: 1px;
         }
       }
     }
 
     .product-thumbnail-container {
-      height: 77px;
-      width: 800px;
+      height: 65px;
       overflow: hidden;
       white-space: nowrap;
-      margin: 0 auto;
 
       .photo-review-thumbnail {
-        margin-left: 0px;
+        margin-left: 5px;
         @include inline-block;
 
         a {
@@ -503,31 +519,9 @@ body.products.reviews, #review-edit-form {
       }
 
       .photo-review-thumbnail-empty {
-        width: 75px;
-        height: 75px;
-        background: #ccc;
-      }
-    }
-
-    .show-all-photo-reviews {
-      color: #666;
-      font-size: 12px;
-      height: 42px;
-
-      .link-photo-reviews {
-        background: #717171;
-        color: white;
-        padding: 10px 15px;
-      }
-
-      .sprites-check {
-        display: none;
-      }
-
-      .selected .sprites-check {
-        @include inline-block;
-        position: relative;
-        top: 1px;
+        width: 65px;
+        height: 65px;
+        background: #f1f1f1;
       }
     }
   }
