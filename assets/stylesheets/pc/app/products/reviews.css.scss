@@ -243,13 +243,8 @@ body.products.reviews, #review-edit-form {
   }
 
   .product-reviews-summary {
-    margin-top: 20px;
-    padding: 40px 76px 45px 76px;
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-    border-top: 1px solid #ccc;
+    padding: 20px 29px;
+    border: 1px solid #dadada;
 
     &.only-thumbnail {
       border-top: 3px solid #aaa;
@@ -259,21 +254,6 @@ body.products.reviews, #review-edit-form {
   .score-summary {
     padding: 0;
     position: relative;
-
-    .lcontent {
-      padding: 9px 20px 9px 0;
-
-      &.show-thumbnail {
-        border-right: 1px solid #ededed;
-        margin-right: 263px;
-
-        ul.scores li .wrap {
-          margin-right: 0;
-          max-width: 600px;
-          width: 70%;
-        }
-      }
-    }
 
     .summary {
       width: 96px;
@@ -353,55 +333,6 @@ body.products.reviews, #review-edit-form {
 
       .percentage {
         color: #6eb67e;
-      }
-    }
-
-    .rcontent {
-      position: absolute;
-      right: 0;
-      top: 4px;
-    }
-
-    .images-container {
-      ul {
-        width: 245px;
-        @include clearfix;
-
-        &.single-line {
-          padding-top: 31px;
-
-          &.no-reviews {
-            padding-top: 55px;
-          }
-        }
-
-        li {
-          float: left;
-          padding: 4px 0 4px 4px;
-        }
-      }
-
-      div.show-all-photo-reviews {
-        text-align: center;
-        margin-top: 10px;
-
-        a {
-          color: #878787;
-          position: relative;
-
-          .sprites-check {
-            display: none;
-          }
-
-          &.selected {
-            font-weight: bold;
-            .sprites-check {
-              @include inline-block;
-              position: absolute;
-              right: -15px;
-            }
-          }
-        }
       }
     }
   }
