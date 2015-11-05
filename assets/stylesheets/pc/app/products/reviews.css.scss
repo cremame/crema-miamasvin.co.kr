@@ -20,6 +20,11 @@ body.products.reviews, #review-edit-form {
         border-bottom: 0;
         margin-bottom: 40px;
         
+        .show-reviews-index {
+          background: #000;
+          color: #fff;
+        }
+        
         .sort_type_box {
           width: 232px;
           float: right;
@@ -77,12 +82,12 @@ body.products.reviews, #review-edit-form {
       }
       
       &.photo .sprites-camera{
-        width: 27px;
-        height: 21px;
+        width: 16px;
+        height: 16px;
         display: block;
         position: absolute;
-        top: 11px;
-        left: 4px;
+        top: 12.5px;
+        left: 9px;
       }
 
       &.title {
@@ -243,13 +248,8 @@ body.products.reviews, #review-edit-form {
   }
 
   .product-reviews-summary {
-    margin-top: 20px;
-    padding: 40px 76px 45px 76px;
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-    border-top: 1px solid #ccc;
+    padding: 20px 29px;
+    border: 1px solid #dadada;
 
     &.only-thumbnail {
       border-top: 3px solid #aaa;
@@ -259,21 +259,6 @@ body.products.reviews, #review-edit-form {
   .score-summary {
     padding: 0;
     position: relative;
-
-    .lcontent {
-      padding: 9px 20px 9px 0;
-
-      &.show-thumbnail {
-        border-right: 1px solid #ededed;
-        margin-right: 263px;
-
-        ul.scores li .wrap {
-          margin-right: 0;
-          max-width: 600px;
-          width: 70%;
-        }
-      }
-    }
 
     .summary {
       width: 96px;
@@ -353,55 +338,6 @@ body.products.reviews, #review-edit-form {
 
       .percentage {
         color: #6eb67e;
-      }
-    }
-
-    .rcontent {
-      position: absolute;
-      right: 0;
-      top: 4px;
-    }
-
-    .images-container {
-      ul {
-        width: 245px;
-        @include clearfix;
-
-        &.single-line {
-          padding-top: 31px;
-
-          &.no-reviews {
-            padding-top: 55px;
-          }
-        }
-
-        li {
-          float: left;
-          padding: 4px 0 4px 4px;
-        }
-      }
-
-      div.show-all-photo-reviews {
-        text-align: center;
-        margin-top: 10px;
-
-        a {
-          color: #878787;
-          position: relative;
-
-          .sprites-check {
-            display: none;
-          }
-
-          &.selected {
-            font-weight: bold;
-            .sprites-check {
-              @include inline-block;
-              position: absolute;
-              right: -15px;
-            }
-          }
-        }
       }
     }
   }
@@ -533,37 +469,54 @@ body.products.reviews, #review-edit-form {
 
   #review-photo-thumbnails {
     position: relative;
+    margin-left: 185px;
     text-align: center;
-
-    .title {
-      font-size: 27px;
-      font-family: $font-default;
-    }
+    height: 65px;
 
     #review-photo-summary {
-      padding-top: 12px;
-      padding-bottom: 30px;
+      position: absolute;
+      left: -190px;
+      top: -1px;
 
       .count-text {
-        color: #616161;
-        font-size: 13px;
+        color: #c3c3c3;
+        font-size: 12px;
 
         .count {
+          font-size: 20px;
+          font-weight: bold;
+          color: black;
           font-family: $font-default;
           padding-right: 3px;
+        }
+      }
+
+      .show-all-photo-reviews {
+        color: #666;
+        font-size: 12px;
+        text-align: right;
+        margin-top: 4px;
+
+        .sprites-check {
+          display: none;
+        }
+
+        .selected .sprites-check {
+          @include inline-block;
+          position: relative;
+          top: 1px;
         }
       }
     }
 
     .product-thumbnail-container {
-      height: 77px;
-      width: 800px;
+      height: 65px;
       overflow: hidden;
       white-space: nowrap;
-      margin: 0 auto;
+      margin-left: -25px;
 
       .photo-review-thumbnail {
-        margin-left: 0px;
+        margin-left: 5px;
         @include inline-block;
 
         a {
@@ -572,31 +525,10 @@ body.products.reviews, #review-edit-form {
       }
 
       .photo-review-thumbnail-empty {
-        width: 75px;
-        height: 75px;
-        background: #ccc;
-      }
-    }
-
-    .show-all-photo-reviews {
-      color: #666;
-      font-size: 12px;
-      height: 42px;
-
-      .link-photo-reviews {
-        background: #717171;
-        color: white;
-        padding: 10px 15px;
-      }
-
-      .sprites-check {
-        display: none;
-      }
-
-      .selected .sprites-check {
-        @include inline-block;
-        position: relative;
-        top: 1px;
+        width: 65px;
+        height: 65px;
+        background: #f1f1f1;
+        border: 1px solid #f1f1f1;
       }
     }
   }
