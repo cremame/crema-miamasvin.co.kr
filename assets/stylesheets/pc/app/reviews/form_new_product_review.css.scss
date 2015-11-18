@@ -63,7 +63,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    width: 133px;
+    width: 250px;
     height: 35px;
     background: #101010;
     color: white;
@@ -76,6 +76,8 @@
     }
 
     .title {
+      letter-spacing: 5px;
+
       .fa {
         vertical-align: middle;
         font-size: 26px;
