@@ -8,7 +8,9 @@ $("div.reviews-form").after($new_form).remove();
   $(".my-first-review").remove();
   $("ul.reviews").prepend($review);
   lib.history.updated($review);
-  lib.history.updated($("div.product-reviews-summary").html("<%=j render 'products/reviews/custom/summary', product: @review.product, formats: :html %>"));
+  var $new_summary = $("<%=j render 'products/reviews/summary', product: @review.product, formats: :html %>");
+  $("div.product_reviews_summary").after($new_summary).remove();
+  lib.history.updated($new_summary);
 
   $(".widget-reviews").removeClass("no-data hidden");
   app.reviews.handle_link_expand({elements: $review}, false);
