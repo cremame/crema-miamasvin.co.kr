@@ -21,7 +21,7 @@
   .input-area-container {
     position: relative;
     height: 35px;
-    font-family: $font-default;
+    @include font-default;
   }
 
   select.select-rating {
@@ -105,13 +105,14 @@
       position: absolute;
       color: #8f8f8f;
       top: 10px;
-      left: 9px;
+      left: 47px;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      width: 135px;
+      width: 80px;
       font-weight: bold;
       font-size: 12px;
+      text-align: left;
     }
   }
 
@@ -203,7 +204,7 @@
       height: 40px;
       line-height: 40px;
       vertical-align: center;
-      font-family: $font-default;
+      @include font-default;
 
       .hint {
         font-size: 12px;
@@ -234,7 +235,7 @@
     z-index: 1000;
     width: 100%;
     top: -61px;
-    font-family: $font-default;
+    @include font-default;
     @include transition(top 0.3s ease);
 
     .content-container {
