@@ -35,9 +35,9 @@ body.products.reviews, #review-edit-form {
           top: 25px;
           left: 0px;
 
-            .link-review-option-type {
-              color: #000;
-            }
+          .link-review-option-type {
+            color: #000;
+          }
         }
       }
     }
@@ -80,9 +80,7 @@ body.products.reviews, #review-edit-form {
         left: 93px;
       }
 
-      &.photo .sprites-camera{
-        width: 16px;
-        height: 16px;
+      &.photo .sprites-camera {
         display: block;
         position: absolute;
         top: 12.5px;
